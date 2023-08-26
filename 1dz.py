@@ -1,7 +1,9 @@
-a = input("Введите строку: ")
+def is_palindrome(s):
+    reversed_s = s[::-1]
+    if s == reversed_s:
+        return True
+    else:
+        return False
+s= input('введите слово')
 
-if a == a[::-1]:
-    print("True")
-else:
-    print("False")
-
+print(is_palindrome(s))
